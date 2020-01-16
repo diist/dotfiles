@@ -1,7 +1,6 @@
 # navigation
-alias c='cd /Users/labbec/code'
-alias ob='cd /Users/labbec/code/ob'
-alias ocp='cd /Users/labbec/code/ocp'
+alias c="cd ~/code"
+
 
 # built-in
 alias ll='ls -l'
@@ -25,7 +24,6 @@ alias dc='docker-compose'
 alias dcr='docker-compose run'
 alias dcb='docker-compose build'
 
-alias dstackup='docker pull realestate/stackup:latest'
 alias stackup='docker run --rm -it \
   -e AWS_SECRET_ACCESS_KEY \
   -e AWS_SECURITY_TOKEN \
@@ -60,7 +58,6 @@ alias cat='bat -p'
 alias yat='bat -p -l yaml'
 
 # Clusters
-# alias k='kubectl --insecure-skip-tls-verify=true'
 alias k='kubectl'
 alias kd='k describe'
 alias kg='k get'
@@ -88,16 +85,3 @@ alias kaf='k apply -f'
 alias kdel='k delete -f'
 
 alias k9s='TERM=xterm-256color k9s'
-
-# ANZ
-alias obnp='source /usr/local/bin/anz-proxy-ob-np'
-alias obprod='source /usr/local/bin/anz-proxy-ob-prod'
-alias obstg='source /usr/local/bin/anz-proxy-ob-stg'
-alias obbuild='source /usr/local/bin/anz-proxy-build'
-alias cspnp='source /usr/local/bin/anz-proxy-csp-np'
-alias secnp='source /usr/local/bin/anz-proxy-sec-np'
-alias secprod='source /usr/local/bin/anz-proxy-sec-prod'
-alias kenc='gcloud kms encrypt --keyring ops --key secrets --location australia-southeast1 --plaintext-file=- --ciphertext-file=-'
-alias kdec='gcloud kms decrypt --keyring ops --key secrets --location australia-southeast1 --plaintext-file=- --ciphertext-file=-'
-alias kubesealnp='kubeseal --cert ~/.kube/kubeseal-cert-ob-np.pem --format yaml'
-alias kubesealstg='kubeseal --cert ~/.kube/kubeseal-cert-ob-stg.pem --format yaml'

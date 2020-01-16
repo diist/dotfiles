@@ -18,15 +18,6 @@ setproxy ()
   rm -f ${KUBECONFIG}.bak
 }
 
-setproxykube ()
-{
-  TLSROUTER=$(kubectl get service -n kube-system tlsrouter-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}') || true
-  if [ ! -z "$TLSROUTER" ]; then
-      sed -i .bak "s/server.*/server\: https\:\/\/${TLSROUTER}/" ${KUBECONFIG}
-  fi
-  rm -f ${KUBECONFIG}.bak
-}
-
 setcontext ()
 {
   sed -i .bak "s/gke_.*-gke/${GCP_PROJECT}/g" ${KUBECONFIG}
@@ -50,7 +41,6 @@ dumpkube-public ()
   get-public-creds
   setcontext
   setcert
-  #setproxy
   setns ops-sre
 }
 
@@ -76,11 +66,6 @@ gapi_curl ()
     JSON=$(curl -s -H "Authorization: Bearer ${TOKEN}" "$@");
     echo $JSON | jq
 }
-
-# fif() {
-#   if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
-#   rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
-# }
 
 git_branch_clean ()
 {
