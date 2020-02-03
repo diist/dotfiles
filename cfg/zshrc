@@ -1,48 +1,34 @@
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/labbec/.oh-my-zsh"
+# Allows things to play nice together
+autoload -U compinit compdef
+compinit
 
-ZSH_THEME="robbyrussell"
+# gcloud
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
-plugins=(
-  git
-)
+# custom
+source ~/code/github.com/diist/dotfiles/cfg/zsh/antigen.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/git.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/exports.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/aliases.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/functions.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/history.zsh
 
-source $ZSH/oh-my-zsh.sh
+# antigen
+antigen bundles <<EOBUNDLES
+  fzf
+  command-not-found
+  docker
+  docker-compose
+  colored-man-pages
+  olivierverdier/zsh-git-prompt
+  superbrothers/zsh-kubectl-prompt
+  zsh-users/zsh-completions
+EOBUNDLES
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[yellow]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}"
+antigen theme robbyrussell
+antigen apply
 
-export PROMPT='
-${ret_status} %{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%} $(git_prompt_info)%{$fg_bold[green]%}%*%{$reset_color%}
-%{$fg_bold[green]%}$%{$reset_color%} '
-
-export KUBE_PROMPT='
-${ret_status} %{$fg[cyan]%}${PWD/#$HOME/~}%{$reset_color%} $(git_prompt_info)%{$fg_bold[green]%}%*%{$reset_color%} %{$fg[blue]%}⎈ $ZSH_KUBECTL_PROMPT%{$reset_color%}
-%{$fg_bold[green]%}$%{$reset_color%} '
-
-## current dir
-# %c
-
-# Completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/labbec/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/labbec/code/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/labbec/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/labbec/code/google-cloud-sdk/completion.zsh.inc'; fi
-
-# kube PS1
-autoload -U colors; colors
-source ${ZSH}/plugins/zsh-kubectl-prompt/kubectl.zsh
-#RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
-
-
-# What's the below for?
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
-REQUESTS_CA_BUNDLE=/usr/local/etc/openssl/cert.pem
+# ps1
+setopt prompt_subst
+source ~/code/github.com/diist/dotfiles/cfg/zsh/ps1.zsh

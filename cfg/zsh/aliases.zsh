@@ -1,10 +1,12 @@
 # navigation
 alias c="cd ~/code"
-
+alias dot="cd ~/code/github.com/diist/dotfiles"
+alias ..="cd .."
+alias ...="cd ../.."
 
 # built-in
-alias ll='ls -l'
-alias la='ls -al'
+alias ls='ls -G'
+alias l='ls -al'
 alias l.='ls -d .*'
 alias ig='grep -i'
 

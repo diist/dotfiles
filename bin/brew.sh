@@ -3,9 +3,9 @@
 packages="
   bat
   cfssl
-  docker
   docker-completion
   exercism
+  fzf
   gnupg
   gnutls
   go
@@ -15,6 +15,7 @@ packages="
   jq
   kubernetes-cli
   kubernetes-helm
+  kubectx
   netcat
   openssl
   shellcheck
@@ -36,6 +37,7 @@ done
 casks="
   1password
   android-file-transfer
+  docker
   evernote
   google-chrome
   google-cloud-sdk
