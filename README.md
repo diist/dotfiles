@@ -41,6 +41,12 @@ $ bin/post-brew.sh
 $ bin/links.sh
 ```
 
+## Antigen
+Antigen is slow to run when opening a new tab, so run it manually when needed:
+```
+$ bin/antigen.zsh
+```
+
 ## Manual steps
 - iTerm2
   - Preferences > General > Preferences > Load preferences from a custom folder
