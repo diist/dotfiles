@@ -27,8 +27,8 @@ Host github.com
 
 Clone the repo:
 ```
-$ mkdir -p ~/code/github.com
-$ cd ~/code/github.com
+$ mkdir -p ~/code/github.com/diist
+$ cd ~/code/github.com/diist
 $ git clone git@github.com:diist/dotfiles.git
 $ cd dotfiles
 ```
