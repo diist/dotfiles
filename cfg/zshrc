@@ -12,6 +12,22 @@ source ~/code/github.com/diist/dotfiles/cfg/zsh/exports.zsh
 source ~/code/github.com/diist/dotfiles/cfg/zsh/aliases.zsh
 source ~/code/github.com/diist/dotfiles/cfg/zsh/functions.zsh
 source ~/code/github.com/diist/dotfiles/cfg/zsh/history.zsh
+source ~/code/github.com/diist/dotfiles/cfg/zsh/antigen.zsh
+
+# Update / change plugins
+antigen bundles <<EOBUNDLES
+  fzf
+  command-not-found
+  docker
+  docker-compose
+  colored-man-pages
+  jonmosco/kube-ps1
+  olivierverdier/zsh-git-prompt
+  zsh-users/zsh-completions
+EOBUNDLES
+
+antigen theme robbyrussell
+antigen apply
 
 # ps1
 setopt prompt_subst

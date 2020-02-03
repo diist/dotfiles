@@ -16,12 +16,6 @@ function precmd() {
   export PS1_TIME="%{$fg_bold[green]%}%*%{$reset_color%}"
   export PS1_DOLLAR="%{$fg_bold[cyan]%}$%{$reset_color%}"
 
-  if [[ $KUBE = true ]]; then
-    export PS1_KUBE="%{$fg[cyan]%}⎈ $ZSH_KUBECTL_PROMPT%{$reset_color%}"
-  else
-    unset PS1_KUBE
-  fi
-
   if [ $timer ]; then
     timer_show=$(($SECONDS - $timer))
     if [ $timer_show -ge 2 ]; then
@@ -33,6 +27,12 @@ function precmd() {
   fi
 }
 
+KUBE_PS1_SYMBOL_COLOR=cyan
+KUBE_PS1_PREFIX=""
+KUBE_PS1_SUFFIX=""
+KUBE_PS1_SEPARATOR=" "
+KUBE_PS1_DIVIDER=" "
+
 export PROMPT='
-${PS1_RETURN_ARROW} ${PS1_RETURN_CODE}${PS1_TIMER} ${PS1_HOME} $(git_prompt_info)${PS1_TIME} ${PS1_KUBE}
+${PS1_RETURN_ARROW} ${PS1_RETURN_CODE}${PS1_TIMER} ${PS1_HOME} $(git_prompt_info)${PS1_TIME} $(kube_ps1)
 ${PS1_DOLLAR} '
