@@ -52,3 +52,6 @@ $ bin/antigen.zsh
   - Preferences > General > Preferences > Load preferences from a custom folder
 - vscode
   - Extensions > Settings Sync#!/bin/bash
+
+## Known issues
+The shell is slow to start, let's investigate http://getantibody.github.io/ further.
