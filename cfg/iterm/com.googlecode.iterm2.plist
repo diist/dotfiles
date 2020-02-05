@@ -22,8 +22,14 @@
 	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/code/github.com/diist/dotfiles/cfg/iterm</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{921, 799}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -66,7 +72,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1255 250 905 1167 0 0 2560 1417 </string>
+	<string>101 -1027 1680 1004 101 -1050 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -94,12 +100,16 @@
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
-				<key>Blue Component</key>
-				<real>0.3333333432674408</real>
-				<key>Green Component</key>
+				<key>Alpha Component</key>
 				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.28880026168518408</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.8638916015625</real>
 				<key>Red Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.25688964128494263</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -148,12 +158,16 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.011087086983025074</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.519744873046875</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.011087086983025074</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -685,12 +699,16 @@
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
-				<key>Blue Component</key>
-				<real>0.3333333432674408</real>
-				<key>Green Component</key>
+				<key>Alpha Component</key>
 				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.35548602923040901</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.842681884765625</real>
 				<key>Red Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.32845254614949226</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -721,12 +739,16 @@
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.85650634765625</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.84997994230629736</real>
 				<key>Red Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.30369015503674746</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -775,12 +797,16 @@
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.694549560546875</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.68812564625762096</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.016267907340079546</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -1271,12 +1297,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{781, 1048}</string>
+		<string>{107, 997}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>45558460-C07F-49B8-A85B-8F67F5223834</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>1</integer>
+	<integer>4</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1641,6 +1667,14 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.terminalWindowName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentTab</string>
@@ -1991,16 +2025,58 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
+	<dict>
+		<key>Initial Directory</key>
+		<string>/Users/clabbe/code/github.com/diist/dotfiles/cfg/iterm</string>
+	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>602377968.67214298</real>
+	<key>PointerActions</key>
+	<dict>
+		<key>Button,1,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kContextMenuPointerAction</string>
+		</dict>
+		<key>Button,2,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPasteFromClipboardPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeDown,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevWindowPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeLeft,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeRight,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeUp,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextWindowPointerAction</string>
+		</dict>
+	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/clabbe/code/github.com/diist/dotfiles/cfg/iterm</string>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
 	<string>https://iterm2.com/appcasts/final_new.xml?shard=5</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
