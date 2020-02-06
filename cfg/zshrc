@@ -3,12 +3,9 @@ source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 
 # custom
-source ~/code/github.com/diist/dotfiles/cfg/zsh/git.zsh
-source ~/code/github.com/diist/dotfiles/cfg/zsh/exports.zsh
-source ~/code/github.com/diist/dotfiles/cfg/zsh/aliases.zsh
-source ~/code/github.com/diist/dotfiles/cfg/zsh/functions.zsh
-source ~/code/github.com/diist/dotfiles/cfg/zsh/history.zsh
-source ~/code/github.com/diist/dotfiles/cfg/zsh/zgen.zsh
+for cfg_file in "${HOME}/code/github.com/diist/dotfiles/cfg/zsh/"*".zsh"; do
+    source "${cfg_file}"
+done
 
 if ! zgen saved; then
   zgen oh-my-zsh
