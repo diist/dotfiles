@@ -22,6 +22,7 @@ if ! zgen saved; then
 fi
 
 # ps1
+setopt autocd
 setopt prompt_subst
 autoload -U colors && colors
 
