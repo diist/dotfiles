@@ -34,6 +34,9 @@ for package in ${packages}; do
   brew install ${package}
 done
 
+brew tap caskroom/cask
+brew tap versent/homebrew-taps
+
 casks="
   1password
   android-file-transfer
@@ -42,14 +45,13 @@ casks="
   google-chrome
   google-cloud-sdk
   iterm2
+  saml2aws
   slack
   spectacle
   spotify
   visual-studio-code
   vlc
 "
-
-brew tap caskroom/cask
 
 for cask in ${casks}; do
   echo "Installing ${cask}..."

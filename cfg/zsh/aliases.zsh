@@ -26,17 +26,6 @@ alias dc='docker-compose'
 alias dcr='docker-compose run'
 alias dcb='docker-compose build'
 
-alias stackup='docker run --rm -it \
-  -e AWS_SECRET_ACCESS_KEY \
-  -e AWS_SECURITY_TOKEN \
-  -e AWS_SESSION_TOKEN \
-  -e AWS_ACCESS_KEY_ID \
-  -e AWS_DEFAULT_REGION \
-  -e AWS_REGION \
-  -v ${PWD}:/cwd \
-  -w /cwd \
-  realestate/stackup:latest'
-
 # Git
 alias git='hub'
 alias hubb='hub browse'
@@ -85,5 +74,3 @@ alias kinfo='k cluster-info;kg cs,no,ns'
 alias kk='kga deployments,po,rs,rc,svc,ep,hpa,ing,jobs,pv,secrets,gateway,virtualservice,destinationrule'
 alias kaf='k apply -f'
 alias kdel='k delete -f'
-
-alias k9s='TERM=xterm-256color k9s'

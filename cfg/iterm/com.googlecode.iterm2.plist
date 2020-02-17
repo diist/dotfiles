@@ -14,6 +14,8 @@
 	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>D0D74B5B-AFAA-4091-936E-CAB5549CA1C2</string>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -72,7 +74,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>101 -1027 1680 1004 101 -1050 1680 1027 </string>
+	<string>1283 0 1273 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1297,20 +1299,22 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{107, 997}</string>
+		<string>{106, 997}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>45558460-C07F-49B8-A85B-8F67F5223834</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>602550768.67228997</real>
+	<real>602719499.99814105</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
