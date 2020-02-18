@@ -1,8 +1,6 @@
 # navigation
 alias c="cd ~/code"
 alias dot="cd ~/code/github.com/diist/dotfiles"
-alias ..="cd .."
-alias ...="cd ../.."
 
 # built-in
 alias ls='ls -G'
@@ -47,6 +45,7 @@ alias weather='curl wttr.in/melbourne'
 alias v='vim'
 alias cat='bat -p'
 alias yat='bat -p -l yaml'
+alias t='terraform'
 
 # Clusters
 alias k='kubectl'

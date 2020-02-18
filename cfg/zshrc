@@ -23,6 +23,8 @@ fi
 
 # ps1
 setopt autocd
+setopt correct
+setopt noclobber
 setopt prompt_subst
 autoload -U colors && colors
 

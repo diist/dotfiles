@@ -1,7 +1,7 @@
 syntax enable
 
-set background=dark
-colorscheme solarized
+"set background=light
+"colorscheme solarized
 :highlight normal ctermbg=234
 "let g:solarized_contrast="high"
 "let g:solarized_visibility="high"
