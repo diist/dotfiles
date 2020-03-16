@@ -74,7 +74,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1283 0 1273 1417 0 0 2560 1417 </string>
+	<string>1284 22 1273 1394 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -182,12 +182,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.645965576171875</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.030190926510840654</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.089911746720275687</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -654,7 +658,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm-256color</string>
+			<string>xterm-new</string>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -781,12 +785,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.771514892578125</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.36981115844024937</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.28386747138574719</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -1304,7 +1312,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>45558460-C07F-49B8-A85B-8F67F5223834</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>7</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2034,8 +2042,15 @@
 		<key>Initial Directory</key>
 		<string>/Users/clabbe/code/github.com/diist/dotfiles/cfg/iterm</string>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>exe</string>
+		<string>--user</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>602377968.67214298</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2071,6 +2086,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/clabbe/code/github.com/diist/dotfiles/cfg/iterm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2085,6 +2102,8 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>

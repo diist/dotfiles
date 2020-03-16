@@ -68,6 +68,7 @@ alias kli='kl --namespace=istio-system'
 alias ki='k --namespace=istio-system'
 alias kgl='kg deploy,po,service,virtualservice,gateway --all-namespaces -l'
 alias kgy='kg -o yaml'
+alias kev='kubectl get events --sort-by="{.firstTimestamp}"'
 
 alias kinfo='k cluster-info;kg cs,no,ns'
 alias kk='kga deployments,po,rs,rc,svc,ep,hpa,ing,jobs,pv,secrets,gateway,virtualservice,destinationrule'

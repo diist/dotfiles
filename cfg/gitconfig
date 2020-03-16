@@ -1,2 +1,5 @@
 [rebase]
     autosquash = true
+[user]
+	name = Clement Labbe
+	email = clement.labbe@digio.com.au

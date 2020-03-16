@@ -4,6 +4,7 @@ packages="
   bat
   cfssl
   docker-completion
+  docker-credential-helper-ecr
   exercism
   fzf
   gnupg
@@ -19,6 +20,8 @@ packages="
   netcat
   openssl
   shellcheck
+  skaffold
+  stern
   sqlite
   the_silver_searcher
   tree

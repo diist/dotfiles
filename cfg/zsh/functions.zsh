@@ -21,3 +21,8 @@ git_branch_clean ()
 {
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
 }
+
+saml () {
+  saml2aws login --role=arn:aws:iam::864141050364:role/Okta-Administrator
+  source <(saml2aws script)
+}
