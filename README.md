@@ -10,27 +10,30 @@ $ xcode-select --install
 
 Set up ssh key:
 ```
-$ mkdir ~/.ssh
-$ cd ~/.ssh
-$ ssh-keygen -t rsa -b 4096 -C "clement.labbe@gmail.com"
-$ mv github.com github.com.pem
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -t rsa -b 4097 -C "clement.labbe@gmail.com" # path: github.com
+mv github.com github.com.pem
 ```
 
-Copy the following to `~/.ssh/config`:
+Add `github.com.pub` as a new SSH [here](https://github.com/settings/keys),
+then write the ssh config file:
 ```
+cat <<EOF > ~/.ssh/config
 Host github.com
-        User clement.labbe@gmail.com
-        Hostname github.com
-        PreferredAuthentications publickey
-        IdentityFile ~/.ssh/github.com.pem
+    User clement.labbe@gmail.com
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/github.com.pem
+EOF
 ```
 
 Clone the repo:
 ```
-$ mkdir -p ~/code/github.com/diist
-$ cd ~/code/github.com/diist
-$ git clone git@github.com:diist/dotfiles.git
-$ cd dotfiles
+mkdir -p ~/code/github.com/diist
+cd ~/code/github.com/diist
+git clone git@github.com:diist/dotfiles.git
+cd dotfiles
 ```
 
 ## Usage
@@ -41,17 +44,9 @@ $ bin/post-brew.sh
 $ bin/links.sh
 ```
 
-## Antigen
-Antigen is slow to run when opening a new tab, so run it manually when needed:
-```
-$ bin/antigen.zsh
-```
-
 ## Manual steps
 - iTerm2
   - Preferences > General > Preferences > Load preferences from a custom folder
 - vscode
-  - Extensions > Settings Sync#!/bin/bash
+  - Extensions > Settings Sync
 
-## Known issues
-The shell is slow to start, let's investigate http://getantibody.github.io/ further.
