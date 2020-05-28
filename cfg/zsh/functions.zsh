@@ -7,7 +7,9 @@ get-public-creds ()
 get-private-creds ()
 {
   rm -f ${KUBECONFIG}
-  gcloud container clusters get-credentials ${CLUSTER} --region australia-southeast1 --project ${GCP_PROJECT} --internal-ip
+  gcloud container clusters get-credentials ${CLUSTER} --region ${GCP_REGION} --project ${GCP_PROJECT} --internal-ip
+  kubectl config rename-context $(kubectl config current-context) ${CLUSTER}
+  kubectl config set-cluster gke_${GCP_PROJECT}_${GCP_REGION}_${CLUSTER} --insecure-skip-tls-verify=true
 }
 
 gapi_curl ()
