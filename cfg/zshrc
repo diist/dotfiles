@@ -61,3 +61,6 @@ function precmd() {
 export PROMPT='
 ${PS1_RETURN_ARROW} ${PS1_RETURN_CODE}${PS1_TIMER} ${PS1_HOME} $(git_prompt_info)${PS1_TIME} $(kube_ps1)
 ${PS1_DOLLAR} '
+
+# Enable SSH agent
+ssh-add -K
