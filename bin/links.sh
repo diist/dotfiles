@@ -1,13 +1,12 @@
 #!/bin/bash
 
-dotfiles="${HOME}/code/github.com/diist/dotfiles"
+dotfiles="${HOME}/dotfiles"
 
 rm ~/.vimrc \
    ~/.zshrc \
    ~/.vim \
-   ~/.gitconfig/.gitconfig
+   || true
 
-ln -s ${dotfiles}/cfg/gitconfig ~/.gitconfig
 ln -s ${dotfiles}/cfg/zshrc ~/.zshrc
 ln -s ${dotfiles}/cfg/vimrc ~/.vimrc
 ln -s ${dotfiles}/cfg/vim ~/.vim
