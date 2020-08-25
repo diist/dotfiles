@@ -10,6 +10,9 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Python
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
+# gcloud
+export CLOUDSDK_PYTHON=/usr/bin/python3
+
 # AWS
 export AWS_CLI=/usr/local/bin/aws
 export AWS_DEFAULT_REGION=ap-southeast-2
