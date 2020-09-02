@@ -30,5 +30,5 @@ saml () {
 }
 
 hubb () {
-  open https://$(git remote -v | grep origin | head -n 1 | cut -d'@' -f2 | cut -d' ' -f1 | tr ':' '/')
+  open https://$(git remote get-url origin | cut -d'@' -f2 | tr ':' '/')
 }
