@@ -30,5 +30,5 @@ saml () {
 }
 
 hubb () {
-  open http://slack-github.com/slack/$(basename $(git rev-parse --show-toplevel))
+  open https://$(git remote -v | grep origin | head -n 1 | cut -d'@' -f2 | cut -d' ' -f1 | tr ':' '/')
 }
