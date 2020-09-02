@@ -11,8 +11,6 @@ packages="
   gnutls
   go
   htop
-  hub
-  istioctl
   jq
   kubernetes-cli
   kubernetes-helm
@@ -20,9 +18,7 @@ packages="
   netcat
   openssl
   shellcheck
-  skaffold
   stern
-  sqlite
   the_silver_searcher
   tree
   vim
@@ -38,7 +34,6 @@ for package in ${packages}; do
 done
 
 brew tap caskroom/cask
-brew tap versent/homebrew-taps
 
 casks="
   1password
@@ -48,7 +43,6 @@ casks="
   google-chrome
   google-cloud-sdk
   iterm2
-  saml2aws
   slack
   spectacle
   spotify

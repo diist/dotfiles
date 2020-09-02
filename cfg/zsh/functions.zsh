@@ -28,3 +28,7 @@ saml () {
   saml2aws login --role=arn:aws:iam::864141050364:role/Okta-Administrator
   source <(saml2aws script)
 }
+
+hubb () {
+  open http://slack-github.com/slack/$(basename $(git rev-parse --show-toplevel))
+}

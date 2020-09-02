@@ -25,8 +25,6 @@ alias dcr='docker-compose run'
 alias dcb='docker-compose build'
 
 # Git
-alias git='hub'
-alias hubb='hub browse'
 alias g='git'
 alias gs='git status'
 alias gd='git diff'
