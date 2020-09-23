@@ -30,10 +30,10 @@ EOF
 
 Clone the repo:
 ```
-mkdir -p ~/code/github.com/diist
-cd ~/code/github.com/diist
+cd ~
 git clone git@github.com:diist/dotfiles.git
 cd dotfiles
+
 ```
 
 ## Usage
