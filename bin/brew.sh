@@ -34,12 +34,14 @@ for package in ${packages}; do
 done
 
 brew tap caskroom/cask
+brew tap homebrew/cask-fonts
 
 casks="
   1password
   android-file-transfer
   docker
   evernote
+  font-fira-code
   google-chrome
   google-cloud-sdk
   iterm2

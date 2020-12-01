@@ -10,3 +10,6 @@ defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 # Imperatively configuring git to avoid overwriting .gitconfig
 git config --global rebase.autosquash true
+
+# Font smoothing something something
+defaults write -g CGFontRenderingFontSmoothingDisabled YES
