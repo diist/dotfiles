@@ -1,12 +1,9 @@
-# navigation
-alias c="cd ~/code"
-alias dot="cd ~/code/github.com/diist/dotfiles"
-
 # built-in
 alias ls='ls -G'
 alias l='ls -al'
 alias l.='ls -d .*'
 alias ig='grep -i'
+alias ..='cd ..'
 
 # docker
 alias d='docker'
@@ -39,13 +36,12 @@ alias gpr='git pull --rebase'
 alias gpsuo='git push -u origin'
 
 # Misc
-alias weather='curl wttr.in/melbourne'
 alias v='vim'
 alias cat='bat -p'
 alias yat='bat -p -l yaml'
 alias t='terraform'
 
-# Clusters
+# Kubernetes
 alias k='kubectl'
 alias kd='k describe'
 alias kg='k get'

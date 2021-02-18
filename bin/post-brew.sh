@@ -2,8 +2,11 @@
 
 cd $(dirname $0)/..
 
+# Install fzf
+/usr/local/opt/fzf/install
+
 # Make zsh default shell
-chsh -s /bin/zsh
+chsh -s /bin/bash
 
 # Disable mouse acceleration (default: 1.5)
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
