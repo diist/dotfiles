@@ -1,0 +1,17 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+ssh-add -A
+
+shopt -s histappend
+export HISTFILE=~/.history
+export SAVEHIST=100000
+export HISTSIZE=100000
+
+source ~/.aliases.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export STARSHIP_CONFIG=~/.starship.toml
+eval "$(starship init bash)"
+
+export PATH=$PATH:~/go/bin

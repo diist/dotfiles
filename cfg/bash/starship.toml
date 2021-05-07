@@ -1,0 +1,20 @@
+[kubernetes]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[aws]
+disabled = true
+
+[hostname]
+format = " [$hostname](bold green) "
+
+[username]
+format = "[$user]($style)"
+
+[ruby]
+disabled = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
