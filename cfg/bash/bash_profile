@@ -13,3 +13,5 @@ source ~/.aliases.sh
 
 export STARSHIP_CONFIG=~/.starship.toml
 eval "$(starship init bash)"
+
+export PATH=$PATH:~/go/bin
