@@ -43,6 +43,7 @@ casks="
   font-fira-code
   google-chrome
   iterm2
+  notion
   slack
   spectacle
   spotify
