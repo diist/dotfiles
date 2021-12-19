@@ -33,7 +33,7 @@ for package in ${packages}; do
   brew install ${package}
 done
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew tap homebrew/cask-fonts
 
 casks="
