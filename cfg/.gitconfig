@@ -1,0 +1,23 @@
+[push]
+	default = simple
+[fetch]
+	prune = true
+[user]
+	name = Clement Labbe
+	email = clabbe@slack-corp.com
+[core]
+	excludesfile = /Users/clabbe/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[rebase]
+	autosquash = true
+[hub]
+	host = slack-github.com
+[pull]
+	rebase = true
+[url "git+ssh://git@slack-github.com"]
+  insteadOf = "https://slack-github.com"
+  insteadOf = "git://slack-github.com"
