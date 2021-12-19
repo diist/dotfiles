@@ -40,10 +40,8 @@ casks="
   1password
   android-file-transfer
   docker
-  evernote
   font-fira-code
   google-chrome
-  google-cloud-sdk
   iterm2
   slack
   spectacle
@@ -54,5 +52,5 @@ casks="
 
 for cask in ${casks}; do
   echo "Installing ${cask}..."
-  brew cask install ${cask}
+  brew install ${cask}
 done
