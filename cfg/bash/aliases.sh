@@ -4,7 +4,7 @@ alias l='ls -al'
 alias l.='ls -d .*'
 alias ig='grep -i'
 alias ..='cd ..'
-alias c='cd ~/code'
+alias c='cd ~/nobackup/code'
 
 # docker
 alias d='docker'
