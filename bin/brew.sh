@@ -11,6 +11,7 @@ packages="
   gnutls
   go
   htop
+  imagemagick
   jq
   kubernetes-cli
   kubernetes-helm
