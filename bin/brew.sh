@@ -18,6 +18,7 @@ packages="
   kubectx
   netcat
   openssl
+  poppler
   shellcheck
   stern
   the_silver_searcher
