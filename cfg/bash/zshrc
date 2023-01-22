@@ -1,0 +1,12 @@
+ssh-add --apple-load-keychain
+
+source ~/.aliases.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export STARSHIP_CONFIG=~/.starship.toml
+eval "$(starship init zsh)"
+
+export PATH=$PATH:~/go/bin
+
+export GOPRIVATE=slack-github.com

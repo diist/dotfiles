@@ -3,6 +3,7 @@
 packages="
   bat
   cfssl
+  coreutils
   docker-completion
   docker-credential-helper-ecr
   exercism
@@ -26,9 +27,10 @@ packages="
   vim
   watch
   wget
-  zsh
-  zsh-completions
+  z
 "
+# zsh
+# zsh-completions
 
 for package in ${packages}; do
   echo "Installing ${package}..."
