@@ -4,8 +4,6 @@ packages="
   bat
   cfssl
   coreutils
-  docker-completion
-  docker-credential-helper-ecr
   exercism
   fzf
   gnupg
@@ -22,11 +20,10 @@ packages="
   poppler
   shellcheck
   stern
-  the_silver_searcher
+  ripgrep
   tree
   vim
   watch
-  wget
   z
 "
 # zsh
@@ -44,7 +41,9 @@ casks="
   1password
   android-file-transfer
   docker
+  firefox
   font-fira-code
+  foobar2000
   google-chrome
   iterm2
   notion
