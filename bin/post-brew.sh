@@ -2,9 +2,6 @@
 
 cd $(dirname $0)/..
 
-# Install fzf
-/usr/local/opt/fzf/install --all --key-bindings --completion
-
 # Make zsh default shell
 chsh -s /bin/bash
 
