@@ -4,9 +4,13 @@ source ~/.aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+source ~/.pack/completion.zsh
+
 export STARSHIP_CONFIG=~/.starship.toml
 eval "$(starship init zsh)"
 
 export PATH=$PATH:~/go/bin
 
 export GOPRIVATE=slack-github.com
+export LAPTOP_DEV=true
+

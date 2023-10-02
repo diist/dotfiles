@@ -2,9 +2,7 @@
 
 packages="
   bat
-  cfssl
   coreutils
-  exercism
   fzf
   gnupg
   gnutls
@@ -45,6 +43,7 @@ casks="
   font-fira-code
   foobar2000
   google-chrome
+  firefox
   iterm2
   notion
   slack
