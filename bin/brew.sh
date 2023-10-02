@@ -7,12 +7,14 @@ packages="
   gnupg
   gnutls
   go
+  hot
   htop
   imagemagick
   jq
   kubernetes-cli
   kubernetes-helm
   kubectx
+  meetingbar
   netcat
   openssl
   poppler
