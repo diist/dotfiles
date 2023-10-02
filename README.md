@@ -47,6 +47,4 @@ $ bin/links.sh
 ## Manual steps
 - iTerm2
   - Preferences > General > Preferences > Load preferences from a custom folder
-- vscode
-  - Extensions > Settings Sync
 
