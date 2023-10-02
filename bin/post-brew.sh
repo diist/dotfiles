@@ -10,3 +10,6 @@ git config --global rebase.autosquash true
 
 # Font smoothing something something
 defaults write -g CGFontRenderingFontSmoothingDisabled YES
+
+# fzf config
+/opt/homebrew/opt/fzf/install
