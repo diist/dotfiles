@@ -1,21 +1,14 @@
 #!/bin/bash
 
 packages="
-  1password
-  android-file-transfer
   bat
   coreutils
-  docker
-  firefox
-  font-fira-code
-  foobar2000
   fzf
   gnupg
   gnutls
   go
   htop
   imagemagick
-  iterm2
   jq
   kubernetes-cli
   kubernetes-helm
@@ -24,20 +17,43 @@ packages="
   openssl
   poppler
   shellcheck
-  spectacle
-  starship
   stern
   ripgrep
-  tidal
   tree
   vim
-  visual-studio-code
-  vlc
   watch
   z
 "
+# zsh
+# zsh-completions
 
 for package in ${packages}; do
   echo "Installing ${package}..."
-  brew install "${package}"
+  brew install ${package}
+done
+
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
+
+casks="
+  1password
+  android-file-transfer
+  docker
+  firefox
+  font-fira-code
+  foobar2000
+  google-chrome
+  iterm2
+  karabiner-elements
+  notion
+  slack
+  spectacle
+  spotify
+  visual-studio-code
+  vlc
+"
+
+for cask in ${casks}; do
+  echo "Installing ${cask}..."
+  brew install --cask ${cask}
 done
