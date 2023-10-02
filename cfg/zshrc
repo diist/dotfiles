@@ -1,5 +1,7 @@
 ssh-add --apple-load-keychain
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source ~/.aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
