@@ -9,8 +9,8 @@ rm ~/.vimrc \
    ~/.vim \
    || true
 
-ln -s ${dotfiles}/cfg/bash/zshrc ~/.zshrc
-ln -s ${dotfiles}/cfg/bash/aliases.sh ~/.aliases.sh
-ln -s ${dotfiles}/cfg/bash/starship.toml ~/.starship.toml
+ln -s ${dotfiles}/cfg/zshrc ~/.zshrc
+ln -s ${dotfiles}/cfg/aliases.sh ~/.aliases.sh
+ln -s ${dotfiles}/cfg/starship.toml ~/.starship.toml
 ln -s ${dotfiles}/cfg/vimrc ~/.vimrc
 ln -s ${dotfiles}/cfg/vim ~/.vim

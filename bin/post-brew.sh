@@ -10,9 +10,3 @@ git config --global rebase.autosquash true
 
 # Font smoothing something something
 defaults write -g CGFontRenderingFontSmoothingDisabled YES
-
-# starship
-curl -sSLO https://starship.rs/install.sh
-chmod +x install.sh
-./install.sh -y
-rm -rf install.sh
